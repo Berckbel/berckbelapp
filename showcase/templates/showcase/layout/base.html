@@ -7,10 +7,29 @@
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'showcase/css/base.css' %}">
+    
+    {% block contentstyles %}
+        <!-- content styles -->
+    {% endblock %}
 </head>
 <body>
-    {% block content %}
-        <!-- content -->
-    {% endblock %}
+    <header>
+    </header>
+
+    <main>
+        {% block content %}
+            <!-- content -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <a href="https://github.com/Berckbel" target="_blank">
+            <img src="{% static 'showcase/images/github.png' %}" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/raul-mogollon-49a24a278/" target="_blank">
+            <img src="{% static 'showcase/images/linkedin.png' %}" alt="linkedin">
+        </a>
+        <p>&copy; 2024 Raul Mogollon</p>
+    </footer>
 </body>
 </html>
