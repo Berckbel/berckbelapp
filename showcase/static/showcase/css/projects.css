@@ -1,3 +1,20 @@
+.title-projects {
+    border: black solid 2px;
+    border-radius: 45px;
+    background-color: white;
+    padding-inline: 10px;
+    margin: 20px;
+    max-width: fit-content;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title-projects h1 {
+    text-decoration: underline;
+}
+
+
 .projects-container {
     display: flex;
     flex-direction: row;

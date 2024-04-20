@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,66 @@
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'showcase/css/base.css' %}">
-    
+
     {% block contentstyles %}
-        <!-- content styles -->
+    <!-- content styles -->
     {% endblock %}
 </head>
+
 <body>
     <header>
+        <img src="{% static 'showcase/images/raul_mogollon.jpeg' %}" alt="raul mogollon">
+        <section>
+            <h1>Raul Mogollon</h1>
+            <p>
+                Ingeniero de Sistemas con experiencia en desarrollo web, utilizando tecnologías como React, Python,
+                HTML,
+                Javascript, CSS y PHP con Magento2. Además, poseo conocimientos en la creación y consumo
+                de APIs RESTful en varios lenguajes de programación. Aplico roles tanto de desarrollo Backend
+                como Frontend utilizando metodologías SCRUM. Además, tengo un nivel de competencia B2 en inglés,
+                lo que significa que hablo con fluidez el idioma.
+            </p>
+        </section>
     </header>
+
+    <section class="work-experience">
+        <h1>Experiencia laboral</h1>
+        <p>
+            <strong>OMNI.PRO:</strong> Como Ingeniero de Sistemas, trabajé como Desarrollador Backend, responsable de
+            crear sistemas
+            de comercio electrónico basados en la web para los diversos clientes de la empresa. Utilicé lenguajes
+            de programación como PHP, junto con tecnologías como Magento2 y GIT & GITHUB. Además, implementé una
+            arquitectura de API REST utilizando MySQL. Además, realicé mantenimiento de sitios web, utilizando
+            JavaScript y PHP para realizar modificaciones solicitadas por los clientes, siguiendo la metodología
+            Ágil SCRUM.
+        </p>
+    </section>
 
     <main>
         {% block content %}
-            <!-- content -->
+        <!-- content -->
         {% endblock %}
     </main>
+
+    <section class="console-section">
+        <h2>ls -l My habilities/</h2>
+        <ul>
+            <li>drwxr-xr-x 4 raulm raulm 4096 English</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 linux</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 PHP</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 Magento2</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 Python</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 Django</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 MySQL</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 React</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 React Native</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 Flutter</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 Angular</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 HTML5</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 CSS3</li>
+            <li>drwxr-xr-x 4 raulm raulm 4096 JavaScript</li>
+        </ul>
+    </section>
 
     <footer>
         <a href="https://github.com/Berckbel" target="_blank">
@@ -32,4 +79,5 @@
         <p>&copy; 2024 Raul Mogollon</p>
     </footer>
 </body>
+
 </html>
