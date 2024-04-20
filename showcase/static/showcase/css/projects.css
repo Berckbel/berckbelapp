@@ -12,16 +12,31 @@
     border: black solid 2px;
     border-radius: 45px;
     max-width: 450px;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .project-card a {
     margin-left: 20px;
+    background-color: blueviolet;
+    padding: 7px;
+    max-width: fit-content;
+    border-radius: 45px;
+    text-decoration: none;
+    color: white;
+}
+
+.project-card a:hover {
+    background-color: rgb(73, 24, 120);
 }
 
 .project-card h2,
 h3 {
     font-weight: bolder;
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .project-card img {
@@ -30,6 +45,8 @@ h3 {
 
     max-height: 250px;
     min-height: 250px;
+
+    border-radius: 25px;
 }
 
 .project-card p {
@@ -46,4 +63,5 @@ h3 {
 
 .project-card li {
     margin-right: 50px;
+    list-style: circle;
 }
