@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raul Mogollon</title>
+    <title>{% block title %}Raul Mogollon{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'showcase/css/base.css' %}">
 </head>
 <body>
     {% block content %}
