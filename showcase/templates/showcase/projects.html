@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div>
+    <h1>Berckbel Blog</h1>
+    <img src="{% static 'showcase/images/bloghome.png' %}" alt="blog image">
+    <p>
+        Este es mi blog personal el cual cree para que las personas puedan
+         dar su opinion de diferentes temas
+    </p>
+    <h3>Tecnologias</h3>
+    <ul>
+        <li>Django</li>
+        <li>API REST</li>
+        <li>React</li>
+        <li>TypeScript</li>
+        <li>Tailwind</li>
+        <li>Postgresql</li>
+        <li>Git y github</li>
+        <li>nginx</li>
+    </ul>
+</div>
+<div>
+    <h1>Task Manager</h1>
+    <img src="{% static 'showcase/images/taskmanager.png' %}" alt="blog image">
+    <p>
+        Esta es mi app de manejo de tareas la cual cree con el objetivo de que la gente pueda
+         gestionar sus tareas de una forma ordenada
+    </p>
+    <h3>Tecnologias</h3>
+    <ul>
+        <li>Django</li>
+        <li>API REST</li>
+        <li>React</li>
+        <li>Tailwind</li>
+        <li>Postgresql</li>
+        <li>Git y github</li>
+        <li>nginx</li>
+    </ul>
+</div>
+{% endblock %}
