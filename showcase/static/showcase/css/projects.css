@@ -8,9 +8,17 @@
     display: flex;
     flex-direction: column;
     margin: 10px;
+    padding: 10px;
+    border: black solid 2px;
+    border-radius: 45px;
+    max-width: 450px;
 }
 
-.project-card h1,
+.project-card a {
+    margin-left: 20px;
+}
+
+.project-card h2,
 h3 {
     font-weight: bolder;
     text-transform: capitalize;
