@@ -7,43 +7,80 @@
 {% endblock %}
 
 {% block content %}
-<div>
-    <h1>Berckbel Blog</h1>
-    <img src="{% static 'showcase/images/bloghome.png' %}" alt="blog image">
-    <p>
-        Este es mi blog personal el cual cree para que las personas puedan
-         dar su opinion de diferentes temas
-    </p>
-    <h3>Tecnologias</h3>
-    <ul>
-        <li>Django</li>
-        <li>JWT</li>
-        <li>API REST</li>
-        <li>React</li>
-        <li>TypeScript</li>
-        <li>Tailwind</li>
-        <li>Postgresql</li>
-        <li>Git y github</li>
-        <li>nginx</li>
-    </ul>
-</div>
-<div>
-    <h1>Task Manager</h1>
-    <img src="{% static 'showcase/images/taskmanager.png' %}" alt="taskmanager image">
-    <p>
-        Esta es mi app de manejo de tareas la cual cree con el objetivo de que la gente pueda
-         gestionar sus tareas de una forma ordenada
-    </p>
-    <h3>Tecnologias</h3>
-    <ul>
-        <li>Django</li>
-        <li>JWT</li>
-        <li>API REST</li>
-        <li>React</li>
-        <li>Tailwind</li>
-        <li>Postgresql</li>
-        <li>Git y github</li>
-        <li>nginx</li>
-    </ul>
-</div>
+<section class="projects-container">
+    <div class="project-card">
+        <h1>Berckbel Blog</h1>
+        <img src="{% static 'showcase/images/bloghome.png' %}" alt="blog image">
+        <p>
+            Este es mi blog personal el cual cree para que las personas puedan
+            dar su opinion de diferentes temas
+        </p>
+        <h3>Tecnologias</h3>
+        <ul>
+            <li>Django</li>
+            <li>JWT</li>
+            <li>API REST</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Tailwind</li>
+            <li>Postgresql</li>
+            <li>Git y github</li>
+            <li>nginx</li>
+        </ul>
+        <a href="https://berckbelblog.berckbel.com" target="_blank">Mira la app</a>
+    </div>
+    <div class="project-card">
+        <h1>Task Manager</h1>
+        <img src="{% static 'showcase/images/taskmanager.png' %}" alt="taskmanager image">
+        <p>
+            Esta es mi app de manejo de tareas la cual cree con el objetivo de que la gente pueda
+            gestionar sus tareas de una forma ordenada
+        </p>
+        <h3>Tecnologias</h3>
+        <ul>
+            <li>Django</li>
+            <li>JWT</li>
+            <li>API REST</li>
+            <li>React</li>
+            <li>Tailwind</li>
+            <li>Postgresql</li>
+            <li>Git y github</li>
+            <li>nginx</li>
+        </ul>
+        <a href="https://taskmanager.berckbel.com" target="_blank">Mira la app</a>
+    </div>
+    <div class="project-card">
+        <h1>PokeDex</h1>
+        <img src="{% static 'showcase/images/pokedex.png' %}" alt="pokedex image">
+        <p>
+            Esta es mi app movil la cual clona una pokedex con su juego Who's that pokemon
+        </p>
+        <h3>Tecnologias</h3>
+        <ul>
+            <li>API REST</li>
+            <li>React Native</li>
+            <li>Git y github</li>
+            <li>expo</li>
+        </ul>
+        <a href="{% static 'showcase/images/pokedex.png' %}" download>Download link</a>
+    </div>
+    <div class="project-card">
+        <h1>Web Pokemon</h1>
+        <img src="{% static 'showcase/images/pokedex.png' %}" alt="pokedex image">
+        <p>
+            Esta es mi web pokemon donde la realize por diversion y la cual 
+            utiliza la pokeapi y de esta manera puedo listar pokemosn y ver sus estadisiticas
+            y esta hermosa la app
+        </p>
+        <h3>Tecnologias</h3>
+        <ul>
+            <li>API REST</li>
+            <li>JavaScript</li>
+            <li>Css</li>
+            <li>JQuery</li>
+            <li>Git y github</li>
+        </ul>
+        <a href="{% static 'showcase/images/pokedex.png' %}" download>Download link</a>
+    </div>
+</section>
 {% endblock %}

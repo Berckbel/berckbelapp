@@ -1,0 +1,41 @@
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.project-card h1,
+h3 {
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.project-card img {
+    max-width: 450px;
+    min-width: 450px;
+
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.project-card p {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+}
+
+.project-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 540px;
+}
+
+.project-card li {
+    margin-right: 50px;
+}

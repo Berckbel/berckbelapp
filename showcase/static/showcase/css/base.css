@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    font-weight: 900;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 25px;
+    margin: 10px;
+}
+
+@media(max-width: 640px) {
+
+    header img {
+        max-width: 50%;
+    }
+
+    .source-paragraph {
+        max-width: 100%;
+    }
+
+}
