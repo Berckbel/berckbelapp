@@ -7,13 +7,16 @@
 {% endblock %}
 
 {% block content %}
-<section>
+<section class="create-section">
     <form action="{% url 'urlshortener:create' %}" method="post">
         {% csrf_token %}
         <label for="original_url">
-            URL:
+            Insert your Url here
         </label>
-        <input type="url" name="original_url" id="original_url">
+        <input type="text" name="original_url" id="original_url">
+        {% if error_msg %}
+            <p><strong style="color: red; margin: 20px;" >{{ error_msg }}</strong></p>
+        {% endif %}
         <button type="submit">Generate</button>
     </form>
 </section>

@@ -4,6 +4,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main {
+    min-height: 60vh;
+}
+
 header {
     display: flex;
     flex-direction: column;

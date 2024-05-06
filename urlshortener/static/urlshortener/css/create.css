@@ -1,0 +1,36 @@
+.create-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-section form {
+    display: flex;
+    flex-direction: column;
+    min-width: 650px;
+}
+
+.create-section form > input {
+    padding: 5px;
+    margin: 20px;
+}
+
+.create-section form > label{
+    padding: 5px;
+    margin-inline: 20px;
+    font-weight: bolder;
+}
+
+.create-section form > button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: x-large;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.create-section form > button:hover {
+    background-color: purple;
+    color: white;
+}
