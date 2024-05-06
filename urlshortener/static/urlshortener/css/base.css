@@ -1,0 +1,100 @@
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(188,45,253,1) 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-weight: 300;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 15%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+header h1 {
+    text-decoration: underline;
+}
+
+header section {
+    border: black solid 2px;
+    border-radius: 45px;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.work-experience {
+    border: black solid 2px;
+    border-radius: 45px;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin: 20px;
+}
+
+.work-experience h1 {
+    text-decoration: underline;
+}
+
+.console-section {
+    background-color: #2d2d2d;
+    color: #00ff00;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.console-section h2 {
+    color: #ffffff;
+}
+
+.console-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.console-section li {
+    margin-bottom: 5px;
+}
+
+footer {
+    display: flex;
+    font-weight: 900;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    max-width: 25px;
+    margin: 10px;
+}
+
+@media(max-width: 640px) {
+
+    header img {
+        max-width: 50%;
+    }
+
+    .source-paragraph {
+        max-width: 100%;
+    }
+
+}

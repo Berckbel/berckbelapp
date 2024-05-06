@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Raul Mogollon{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'urlshortener/css/base.css' %}">
+
+    {% block contentstyles %}
+    <!-- content styles -->
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Url Shortener</h1>
+            <p>
+                Url Shortener, by Berckbel
+            </p>
+        </section>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- content -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <a href="https://github.com/Berckbel" target="_blank">
+            <img src="{% static 'showcase/images/github.png' %}" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/raul-mogollon-49a24a278/" target="_blank">
+            <img src="{% static 'showcase/images/linkedin.png' %}" alt="linkedin">
+        </a>
+        <p>&copy; 2024 Raul Mogollon</p>
+    </footer>
+
+    <script src="{% static 'showcase/js/jquery-3.7.1.min.js' %}"></script>
+    <script src="{% static 'showcase/js/showcase.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{% extends 'urlshortener/layout/base.html' %}
+
+{% load static %}
+
+{% block contentstyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'urlshortener/css/create.css' %}">
+{% endblock %}
+
+{% block content %}
+<section>
+    <form action="{% url 'urlshortener:create' %}" method="post">
+        {% csrf_token %}
+        <label for="original_url">
+            URL:
+        </label>
+        <input type="url" name="original_url" id="original_url">
+        <button type="submit">Generate</button>
+    </form>
+</section>
+{% endblock %}
