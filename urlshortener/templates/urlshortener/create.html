@@ -20,4 +20,37 @@
         <button type="submit">Generate</button>
     </form>
 </section>
+<section class="create-list-section">
+    {% if shorts|length > 0 %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Short</th>
+                    <th>Domain</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for short in shorts %}
+                    <tr>
+                        <td>
+                            <a href="{{ short.url_hash }}">{{ short.hash }}</a>
+                        </td>
+                        <td>
+                            <span>{{ short.origin }}</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            {% if shorts_page.has_previous %}
+                <a href="?page={{ shorts_page.previous_page_number }}">&laquo;</a>
+            {% endif %}
+            <span>{{ shorts_page.number }}</span>
+            {% if shorts_page.has_next %}
+                <a href="?page={{ shorts_page.next_page_number }}">&raquo;</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</section>
 {% endblock %}
