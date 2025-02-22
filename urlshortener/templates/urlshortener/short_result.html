@@ -1,0 +1,24 @@
+{% extends 'urlshortener/layout/base.html' %}
+
+{% load static %}
+
+{% block contentstyles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'urlshortener/css/short_result.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="result-section">
+    <div>
+        <h1>Hash Result</h1>
+        {% if hash %}
+            <p>{{ hash }}</p>
+        {% endif %}
+    </div>
+    <div>
+        <h1>Short Result</h1>
+        {% if url_hash_redirect %}
+            <p>{{ url_hash_redirect }}</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

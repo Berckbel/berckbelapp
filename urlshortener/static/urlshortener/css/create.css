@@ -15,7 +15,7 @@
     margin: 20px;
 }
 
-.create-section form > label{
+.create-section form > label {
     padding: 5px;
     margin-inline: 20px;
     font-weight: bolder;
@@ -33,4 +33,73 @@
 .create-section form > button:hover {
     background-color: purple;
     color: white;
+}
+
+.create-list-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-list-section table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.create-list-section > table th {
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.create-list-section th,
+.create-list-section td {
+    border: 3px solid #96d2f2;
+    padding: 8px;
+    text-align: left;
+}
+
+.create-list-section > table > tbody tr:nth-child(even) {
+    background-color: #a8f4ed;
+}
+
+.create-list-section > table > tbody tr:nth-child(odd) {
+    background-color: rgba(34,193,195,1)
+}
+
+.create-list-section > table > tbody tr:hover {
+    background-color: rgba(188,45,253,1)
+}
+
+@media (max-width: 640px) {
+    .create-section form {
+        min-width: 90%;
+    }
+
+    .create-list-section table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .create-list-section th,
+    .create-list-section td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .create-list-section > table th {
+        font-size: large;
+    }
+
+    .create-section form > button {
+        font-size: large;
+    }
+
+    main {
+        min-height: 100vh;
+    }
 }
